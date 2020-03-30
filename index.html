@@ -16,6 +16,16 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+  <style type="text/css">
+  .mobileShow {display: none;}
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){
+      .mobileShow {display: inline;}
+  }
+  </style>
 </head>
 
 <body>
@@ -23,6 +33,7 @@
     <div class="col-md-3 col-sm-12 col-xs-12">
       <div id="intro"></div>
     </div>
+
     <div class="col-md-9 col-sm-12 col-xs-12">
       <nav class="navbar">
         <div id="navbar" class="">
@@ -37,7 +48,6 @@
           </ul>
         </div>
       </nav>
-
       <div class="tab-content" id="nav-tabContent">
         <div id="bio" class="tab-pane fade in active"></div>
         <div id="education" class="tab-pane fade"></div>
