@@ -11,6 +11,16 @@ h1,h2,h3,h4,h5,h6 {
     color: #777;
 }
 
+#experienceLogos  {
+    float: left;    
+    margin: 0 15px 10px 0;
+}
+
+#experienceTexts  {
+    float: left;    
+    margin: 0 30px 0 0;
+}
+
 .nav-tabs > li {
     font-size: 16px;
 }
@@ -38,7 +48,7 @@ h1,h2,h3,h4,h5,h6 {
     height: auto;
     display: inline-block;
     vertical-align: top;
-    float: right;
+    /* float: right; */
 }
 .timeline-title {
     width: 80%;
@@ -140,3 +150,48 @@ body {
     padding-bottom: 40px;
     margin-top: 40px;
 }
+
+/* contact form */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #00357a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #264e83;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 70%;
+    margin-left: 5px;
+  }
