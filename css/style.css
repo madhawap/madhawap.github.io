@@ -822,6 +822,12 @@ header .follow a:hover {
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .research .box-container .box .column3 .icons .my-tool-tip {
+        display: none;
+    }
+}
+
 /*Research Section Styling Ends*/
 
 
