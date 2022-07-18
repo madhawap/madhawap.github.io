@@ -357,13 +357,13 @@
                         <div class="column3">
                             <div class="icons">
                                 <div class="my-tool-tip">
-                                    <a href="#0p0r0j5" id="proj5" class="fas fa-link my-link-copy"
-                                       onclick="return infunction('proj5', '0p0r0j5-span')"
+                                    <a id="proj5" class="fas fa-link my-link-copy"
+                                       onclick="return infunction('0p0r0j5', '0p0r0j5-span')"
                                        onmouseout="return outFunc('0p0r0j5-span')">
                                         <span class="my-tool-tip-text" id="0p0r0j5-span">Copy the link</span>
                                     </a>
                                 </div>
-                                <a href="#" class="fas fa-share"></a>
+                                <a class="fas fa-share"></a>
                                 <a href="https://ieeexplore.ieee.org/abstract/document/9658673" target="_blank"
                                    class="fas fa-search"></a>
                             </div>
@@ -388,13 +388,13 @@
                         <div class="column3">
                             <div class="icons">
                                 <div class="my-tool-tip">
-                                    <a href="#0p0r0j4" id="proj4" class="fas fa-link my-link-copy"
-                                       onclick="return infunction('proj4', '0p0r0j4-span')"
+                                    <a id="proj4" class="fas fa-link my-link-copy"
+                                       onclick="return infunction('0p0r0j4', '0p0r0j4-span')"
                                        onmouseout="return outFunc('0p0r0j4-span')">
                                         <span class="my-tool-tip-text" id="0p0r0j4-span">Copy the link</span>
                                     </a>
                                 </div>
-                                <a href="#" class="fas fa-share"></a>
+                                <a class="fas fa-share"></a>
                                 <a href="https://dl.acm.org/doi/abs/10.1145/3382507.3421157" target="_blank"
                                    class="fas fa-search"></a>
                             </div>
@@ -418,13 +418,13 @@
                         <div class="column3">
                             <div class="icons">
                                 <div class="my-tool-tip">
-                                    <a href="#0p0r0j3" class="fas fa-link my-link-copy" id="proj3"
-                                       onclick="return infunction('proj3', '0p0r0j2-span')"
+                                    <a class="fas fa-link my-link-copy" id="proj3"
+                                       onclick="return infunction('0p0r0j3', '0p0r0j3-span')"
                                        onmouseout="return outFunc('0p0r0j3-span')">
                                         <span class="my-tool-tip-text" id="0p0r0j3-span">Copy the link</span>
                                     </a>
                                 </div>
-                                <a href="#" class="fas fa-share"></a>
+                                <a class="fas fa-share"></a>
                                 <a href="https://link.springer.com/chapter/10.1007/978-3-030-62466-8_8" target="_blank"
                                    class="fas fa-search"></a>
                             </div>
@@ -448,13 +448,13 @@
                         <div class="column3">
                             <div class="icons">
                                 <div class="my-tool-tip">
-                                    <a href="#0p0r0j2" id="proj2" class="fas fa-link my-link-copy"
-                                       onclick="return infunction('proj2', '0p0r0j2-span')"
+                                    <a id="proj2" class="fas fa-link my-link-copy"
+                                       onclick="return infunction('0p0r0j2', '0p0r0j2-span')"
                                        onmouseout="return outFunc('0p0r0j2-span')">
                                         <span class="my-tool-tip-text" id="0p0r0j2-span">Copy the link</span>
                                     </a>
                                 </div>
-                                <a href="#" class="fas fa-share"></a>
+                                <a class="fas fa-share"></a>
                                 <a href="http://ceur-ws.org/Vol-2549/article-03.pdf" target="_blank"
                                    class="fas fa-search"></a>
                             </div>
@@ -480,13 +480,13 @@
                         <div class="column3">
                             <div class="icons">
                                 <div class="my-tool-tip">
-                                    <a href="#0p0r0j1" id="proj1" class="fas fa-link my-link-copy"
-                                       onclick="return infunction('proj1', '0p0r0j1-span')"
+                                    <a id="proj1" class="fas fa-link my-link-copy"
+                                       onclick="return infunction('0p0r0j1', '0p0r0j1-span')"
                                        onmouseout="return outFunc('0p0r0j1-span')">
                                         <span class="my-tool-tip-text" id="0p0r0j1-span">Copy the link</span>
                                     </a>
                                 </div>
-                                <a href="#" class="fas fa-share"></a>
+                                <a class="fas fa-share"></a>
                                 <a href="https://ieeexplore.ieee.org/abstract/document/7829910" target="_blank"
                                    class="fas fa-search"></a>
                             </div>
@@ -1079,10 +1079,17 @@
     //     tooltip.innerHTML = "Link copied";
     // });
     //
-    function infunction(atagID, spanId) {
-        var linkToCopy = document.getElementById(atagID).getAttribute("href");
-        navigator.clipboard.writeText("https://madhawaperera.com/" + linkToCopy);
-        // console.log("https://madhawaperera.com/" + linkToCopy)
+    // function infunction(atagID, spanId) {
+    //     var linkToCopy = document.getElementById(atagID).getAttribute("href");
+    //     navigator.clipboard.writeText("https://madhawaperera.com/" + linkToCopy);
+    //     // console.log("https://madhawaperera.com/" + linkToCopy)
+    //     var tooltip = document.getElementById(spanId);
+    //     tooltip.innerHTML = "Link copied";
+    // }
+
+    function infunction(boxId, spanId) {
+        navigator.clipboard.writeText("https://madhawaperera.com/#" + boxId);
+        // console.log("https://madhawaperera.com/" + boxId)
         var tooltip = document.getElementById(spanId);
         tooltip.innerHTML = "Link copied";
     }
