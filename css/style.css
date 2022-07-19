@@ -468,17 +468,17 @@ header .follow a:hover {
 }
 
 .experience .box-container .box .content .column1 {
-    flex: 15%;
+    flex: 10%;
     padding: 5px;
 }
 
 .experience .box-container .box .content .column1 img {
     /*height: 30%;*/
-    width: 80%;
+    width: 70%;
 }
 
 .experience .box-container .box .content .column2 {
-    flex: 85%;
+    flex: 90%;
     padding: 5px;
 }
 
