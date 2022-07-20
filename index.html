@@ -18,6 +18,23 @@
 <!--<div class="cursor-1"></div>-->
 <!--<div class="cursor-2"></div>-->
 
+
+<div class="banner">
+    <div class="banner__content">
+        <div class="banner__text">
+            <strong>Notice:</strong> This website is still under construction. Please <a href="#contact"
+                                                                                         style="text-decoration: underline">contact
+            me</a> for more information.
+        </div>
+        <button class="banner__close" type="button">
+        <span>
+          X
+        </span>
+        </button>
+    </div>
+</div>
+
+
 <div id="menu-bars" class="fas fa-bars"></div>
 
 <!-- header section starts  -->
@@ -84,11 +101,11 @@
                 <img src="images/Madhawa_Perera.jpg" alt="">
                 <div class="box-container">
                     <div class="box">
-<!--                        <p><span> Languages : </span> English, Sinhalese </p>-->
-<!--                        <p><span> Work : </span> Researcher, Software Engineer </p>-->
+                        <!--                        <p><span> Languages : </span> English, Sinhalese </p>-->
+                        <!--                        <p><span> Work : </span> Researcher, Software Engineer </p>-->
                     </div>
                 </div>
-<!--                <a href="#" class="btn">Download CV</a>-->
+                <!--                <a href="#" class="btn">Download CV</a>-->
                 <a href="#contact" class="btn">Say hi!</a>
             </div>
 
@@ -107,7 +124,8 @@
 
                 <p>Broadly, I'm passionate about behavioural studies and especially novel human interaction in Augmented
                     Reality (AR) and Virtual Reality (VR) environments. My specific areas of application have spanned
-                    from understanding user interaction and environmental context to semantic modeling of the large volumes of data
+                    from understanding user interaction and environmental context to semantic modeling of the large
+                    volumes of data
                     ingested by wearable AR/VR devices.
 
                     For my current work I am using Oculus Quest, Quest 2 and Microsoft HoloLens 2. I am experienced
@@ -116,8 +134,10 @@
                     Python and R programming languages.</p>
 
                 <p>When there's time, I like to bake (<a href="https://www.instagram.com/myfoodepisodes/"
-                                                         target="_blank" style="color:blue;">@myfoodepisodes</a>), play Ukulele (which I
-                    started recently), <a href="https://madhawacperera.medium.com/" target="_blank" style="color:blue">blog</a>, volunteer,
+                                                         target="_blank" style="color:blue;">@myfoodepisodes</a>), play
+                    Ukulele (which I
+                    started recently), <a href="https://madhawacperera.medium.com/" target="_blank" style="color:blue">blog</a>,
+                    volunteer,
                     or enjoy a long distance run.
 
                 </p>
@@ -363,7 +383,7 @@
                                         <span class="my-tool-tip-text" id="0p0r0j5-span">Copy the link</span>
                                     </a>
                                 </div>
-<!--                                <a class="fas fa-share"></a>-->
+                                <!--                                <a class="fas fa-share"></a>-->
                                 <a href="https://ieeexplore.ieee.org/abstract/document/9658673" target="_blank"
                                    class="fas fa-search"></a>
                             </div>
@@ -394,7 +414,7 @@
                                         <span class="my-tool-tip-text" id="0p0r0j4-span">Copy the link</span>
                                     </a>
                                 </div>
-<!--                                <a class="fas fa-share"></a>-->
+                                <!--                                <a class="fas fa-share"></a>-->
                                 <a href="https://dl.acm.org/doi/abs/10.1145/3382507.3421157" target="_blank"
                                    class="fas fa-search"></a>
                             </div>
@@ -424,7 +444,7 @@
                                         <span class="my-tool-tip-text" id="0p0r0j3-span">Copy the link</span>
                                     </a>
                                 </div>
-<!--                                <a class="fas fa-share"></a>-->
+                                <!--                                <a class="fas fa-share"></a>-->
                                 <a href="https://link.springer.com/chapter/10.1007/978-3-030-62466-8_8" target="_blank"
                                    class="fas fa-search"></a>
                             </div>
@@ -454,7 +474,7 @@
                                         <span class="my-tool-tip-text" id="0p0r0j2-span">Copy the link</span>
                                     </a>
                                 </div>
-<!--                                <a class="fas fa-share"></a>-->
+                                <!--                                <a class="fas fa-share"></a>-->
                                 <a href="http://ceur-ws.org/Vol-2549/article-03.pdf" target="_blank"
                                    class="fas fa-search"></a>
                             </div>
@@ -486,7 +506,7 @@
                                         <span class="my-tool-tip-text" id="0p0r0j1-span">Copy the link</span>
                                     </a>
                                 </div>
-<!--                                <a class="fas fa-share"></a>-->
+                                <!--                                <a class="fas fa-share"></a>-->
                                 <a href="https://ieeexplore.ieee.org/abstract/document/7829910" target="_blank"
                                    class="fas fa-search"></a>
                             </div>
@@ -1098,6 +1118,10 @@
         var tooltip = document.getElementById(spanId);
         tooltip.innerHTML = "Copy the link";
     }
+
+    document.querySelector(".banner__close").addEventListener("click", function () {
+        this.closest(".banner").style.display = "none";
+    });
 </script>
 
 <script src="js/script.js"></script>
