@@ -221,7 +221,7 @@ header .follow a:hover {
 }
 
 .home .image1 img {
-    width: 100%;
+    width: 50%;
 }
 
 .home .image2 {
@@ -229,7 +229,7 @@ header .follow a:hover {
 }
 
 .home .image2 img {
-    width: 100%;
+    width: 70%;
 }
 
 /*.image2{*/
@@ -237,7 +237,7 @@ header .follow a:hover {
 /*   }*/
 
 .home .content {
-    flex: 1 1 40rem;
+    flex: 1 1 45rem;
 }
 
 .home .content .hi {
