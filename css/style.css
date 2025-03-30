@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');*/
 
 :root {
     /*--main-color:#e38528;*/
     /*--main-color:#ea4d4d;*/
     --main-color: #671F24;
+    /*--main-color: #384250;*/
+
 }
 
 * {
@@ -45,7 +47,7 @@ section {
 /*Special Notices messages Styling Starts*/
 
 .banner {
-  background: #f50909;
+  background: #c93f3f;
 }
 
 .banner__content {
@@ -103,7 +105,8 @@ header {
     bottom: 0;
     /*background:#222;*/
     /*background: #ea4d4d;*/
-    background: #671F24;
+    /*background: #671F24;*/
+    background: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -310,7 +313,6 @@ header .follow a:hover {
     padding: .5rem 0;
     text-align: justify;
     text-justify: inter-word;
-
 }
 
 .about .row-1 .content .box-container {
@@ -350,23 +352,30 @@ header .follow a:hover {
     text-align: left;
 }
 
-
 .about .row-2 {
+    flex: 1 1 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+
+.about .row-3 {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     align-items: center;
 }
 
-.about .row-2 .skills {
+.about .row-3 .skills {
     flex: 1 1 40rem;
 }
 
-.about .row-2 .skills .progress {
+.about .row-3 .skills .progress {
     padding: 1rem 0;
 }
 
-.about .row-2 .skills .progress h3 {
+.about .row-3 .skills .progress h3 {
     display: flex;
     justify-content: space-between;
     padding: .7rem 0;
@@ -375,7 +384,7 @@ header .follow a:hover {
     font-weight: 400;
 }
 
-.about .row-2 .skills .progress .bar {
+.about .row-3 .skills .progress .bar {
     width: 100%;
     background: #ccc;
     overflow: hidden;
@@ -383,37 +392,37 @@ header .follow a:hover {
     border-radius: 50rem;
 }
 
-.about .row-2 .skills .progress .bar span {
+.about .row-3 .skills .progress .bar span {
     display: block;
     height: 100%;
     background: var(--main-color);
     border-radius: 50rem;
 }
 
-.about .row-2 .skills .progress:nth-child(1) .bar span {
+.about .row-3 .skills .progress:nth-child(1) .bar span {
     width: 95%;
 }
 
-.about .row-2 .skills .progress:nth-child(2) .bar span {
+.about .row-3 .skills .progress:nth-child(2) .bar span {
     width: 80%;
 }
 
-.about .row-2 .skills .progress:nth-child(3) .bar span {
+.about .row-3 .skills .progress:nth-child(3) .bar span {
     width: 75%;
 }
 
-.about .row-2 .skills .progress:nth-child(4) .bar span {
+.about .row-3 .skills .progress:nth-child(4) .bar span {
     width: 85%;
 }
 
-.about .row-2 .box-container {
+.about .row-3 .box-container {
     flex: 1 1 40rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.about .row-2 .box-container .box {
+.about .row-3 .box-container .box {
     flex: 1 1 15rem;
     background: #fff;
     padding: 2rem;
@@ -421,12 +430,12 @@ header .follow a:hover {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
-.about .row-2 .box-container .box h3 {
+.about .row-3 .box-container .box h3 {
     color: var(--main-color);
     font-size: 3rem;
 }
 
-.about .row-2 .box-container .box p {
+.about .row-3 .box-container .box p {
     color: #666;
     font-size: 1.7rem;
     padding-top: .5rem;
@@ -987,6 +996,18 @@ header .follow a:hover {
 }
 
 /*Contact Section Styling Ends*/
+
+
+
+/* Ack Section Styling Starts*/
+.acknowledgement .content li {
+    color: #666;
+    font-size: 1.7rem;
+    padding: .5rem 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+/* Ack Section Styling Ends*/
 
 
 /*Footer Section Styling Ends*/
