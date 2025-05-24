@@ -441,6 +441,33 @@ header .follow a:hover {
     padding-top: .5rem;
 }
 
+.dashed-line {
+    border: none;
+    border-top: 2px dashed #888; /* Adjust thickness and colour */
+    margin: 2rem 0; /* Spacing above and below */
+}
+
+.hr-with-icon {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.hr-with-icon hr {
+    flex: 1;
+    border: none;
+    border-top: 2px dashed #aaa;
+    margin: 0;
+}
+
+.hr-icon {
+    padding: 0 1rem;
+    font-size: 3rem;
+    color: #888;
+}
+
+
 /*About Section Styling Ends*/
 
 
