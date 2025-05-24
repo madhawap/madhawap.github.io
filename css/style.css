@@ -940,6 +940,7 @@ header .follow a:hover {
 .contact .icons-container .icons p {
     color: #666;
     font-size: 1.7rem;
+    text-align: left;
 }
 
 .contact .row {
