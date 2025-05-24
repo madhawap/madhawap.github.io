@@ -553,6 +553,156 @@ header .follow a:hover {
 /*Experience Section Styling Ends*/
 
 
+/* Education Section Styling Starts */
+
+/* Education Header Bar */
+.edu-header {
+    cursor: pointer;
+    background: #eee;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    transition: background 0.3s;
+}
+
+.edu-header:hover {
+    background: #ddd;
+}
+
+.edu-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.arrow {
+    font-size: 1.8rem; /* Adjust as needed */
+    vertical-align: middle; /* Optional: aligns it better with text */
+}
+
+/* Initially hidden */
+.edu-container {
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+
+}
+
+/* Shown when toggled */
+.edu-container.show {
+    display: flex;
+}
+
+
+/* Education Box Container */
+/* .edu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+} */
+
+/* Each Box */
+.edu-container .box {
+    position: relative;
+    border-left: 0.2rem solid var(--main-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    flex: none;              /* prevents shrinking/growing */
+    width: 100%;
+}
+
+/* .edu-container .box {
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+} */
+
+
+/* Circle dot (like timeline effect) */
+.edu-container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+
+/* Box Content */
+.edu-container .box .content {
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0.5rem 1rem #c1bab3; */
+    border-radius: 0.5rem;
+}
+
+/* Span = year range */
+.edu-container .box .content span {
+    color: #fff;
+    font-size: 1.6rem;
+    background: var(--main-color);
+    border-radius: 50rem;
+    padding: 0.4rem 1rem;
+}
+
+/* Degree title */
+.edu-container .box .content h3 {
+    font-size: 2rem;
+    color: #111;
+}
+
+/* Institution */
+.edu-container .box .content h4 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #111;
+}
+
+
+
+
+/* Description */
+.edu-container .box .content p {
+    font-size: 1.5rem;
+    color: #666;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.edu-box-container {
+    display: flex;
+    flex-direction: column;
+    /* border-left: 0.2rem solid var(--main-color); This is the timeline line */
+    padding-left: 1.5rem;
+}
+
+
+
+/*Education Section Styling Ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Mentoring Section Styling Starts*/
 
 .mentoring .box-container {
