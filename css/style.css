@@ -451,6 +451,11 @@ header .follow a:hover {
     flex-wrap: wrap;
 }
 
+/* .experience .box-container {
+    display: flex;
+    flex-direction: column; 
+} */
+
 .experience .box-container .box {
     position: relative;
     /*flex:1 1 33rem;*/
@@ -513,16 +518,36 @@ header .follow a:hover {
 .experience .box-container .box .content .column1 {
     flex: 10%;
     padding: 5px;
+    display: flex;
+    justify-content: center; /* Only horizontal centering */
+    align-items: flex-start; /* Ensure top alignment */
 }
 
 .experience .box-container .box .content .column1 img {
-    /*height: 30%;*/
-    width: 70%;
+    max-width: 70px;       /* Prevents it from growing too large */
+    width: 100%;           /* Takes full width of its container */
+    height: auto;          /* Maintains aspect ratio */
+    object-fit: contain;   /* Optional: ensures it fits without distortion */
 }
+
+/* .experience .box-container .box .content .column1 img {
+    width: 70%;
+} */
 
 .experience .box-container .box .content .column2 {
     flex: 90%;
     padding: 5px;
+}
+
+@media (min-width: 0px) {
+  .experience .box-container {
+    flex-direction: column;
+  }
+
+  .experience .box-container .box {
+    flex: none;
+    width: 100%;
+  }
 }
 
 /*Experience Section Styling Ends*/
